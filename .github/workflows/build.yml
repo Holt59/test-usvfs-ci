@@ -1,0 +1,11 @@
+name: Test
+
+on: [push]
+
+jobs:
+  test:
+    name: Test
+    runs-on: windows-2022
+    steps:
+      - uses: actions/checkout@v4
+      - run: ./test/bin/tvfs_test_x64.exe
