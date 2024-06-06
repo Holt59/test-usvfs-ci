@@ -8,4 +8,5 @@ jobs:
     runs-on: windows-2022
     steps:
       - uses: actions/checkout@v4
+      - run: Get-ChildItem D:\a\test-usvfs-ci\test-usvfs-ci\
       - run: ./test/bin/tvfs_test_x64.exe
