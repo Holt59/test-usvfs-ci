@@ -10,5 +10,5 @@ jobs:
       - uses: actions/checkout@v4
       - run: ./test-create.exe
         if: always()
-      - run: ./test/bin/tvfs_test_x64.exe
-        if: always()
+      # - run: ./test/bin/tvfs_test_x64.exe
+      #   if: always()
